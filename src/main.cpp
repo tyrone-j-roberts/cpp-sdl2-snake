@@ -14,11 +14,7 @@ int main(int argc, char *argv[]) {
     while(game.isRunning()) {
         game.handleEvents();
         game.update();
-
-
-
         game.render();
-
         SDL_Delay(1000 / 15);
     }
 
