@@ -2,12 +2,16 @@
 #define GAME_HPP
 #include <SDL2/SDL.h>
 #include <iostream>
+#include "Snake.hpp"
 
 class Game {
     private:
         SDL_Window* window;
         SDL_Renderer* renderer;
         bool running;
+        int width;
+        int height;
+        Snake snake;
     
     public:
         Game();
